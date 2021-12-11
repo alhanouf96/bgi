@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="font/flaticon.css"> 
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="style2.css"> 
+<link href="https://fonts.googleapis.com/css?family=El Messiri&display=swap" rel="stylesheet"></link>
+
+<link href="https://fonts.googleapis.com/css?family=Cairo&display=swap" rel="stylesheet"></link>
+
+</head>
+
+
+<body>
+
+<div class="mobile-container ">
+
+<div class="card">
+
+  <div class="container-fluid scal">
+  <img src="" alt="Denim Jeans" style="width:100%" id="myImage" class="card__image loading">
+
+   <i class="flaticon-right-arrow-angle btn" onclick="goBack()"></i>
+
+</div>
+
+  <h3 id="title"></h3>
+
+ <div id="textbox">
+                     <p class="alignleft" id="kal"></p>
+                     <p class="alignright" id="price"></p>
+                       <p class="aligncenter" id="price2"></p>
+                         </div>
+
+  <p class="det" id="dt"></p>
+ <p class="det" id="dt-en"></p>
+
+</div>
+
+
+</div>
+
+
+<script>
+
+var loc=localStorage.getItem("storageName");
+
+ 
+   switch(loc) {
+
+       case "ki":
+
+   document.getElementById("myImage").src = "images/drip/bif.jpg" ;
+   document.getElementById("title").innerHTML = " كلاسيك بيف ";
+   document.getElementById("kal").innerHTML = "490 kal" ;
+   document.getElementById("price").innerHTML = "27.00 SR";
+   document.getElementById("dt").innerHTML = "١٦٠ جرام لحم بلاك انجوس - خس - بصل - مخلل - جبنة امريكية - صوص جيا ";
+  
+   break;
+
+   case "vii":
+
+   document.getElementById("myImage").src = "images/drip/smok.jpg";
+   document.getElementById("title").innerHTML = " سموكي بيف";
+   document.getElementById("kal").innerHTML = "540 kal";
+   document.getElementById("price").innerHTML = "28.00 SR";
+   document.getElementById("dt").innerHTML = "١٦٠ جرام بلاك انجوس - لحم مقدد بقري - صوص باربيكيو - جبنة امريكية - بصل كرنشي";
+  
+   break;
+
+   case "kmm":
+
+   document.getElementById("myImage").src = "images/drip/trf.jpg" ;
+   document.getElementById("title").innerHTML = "ترفل بيف";
+   document.getElementById("kal").innerHTML = "610 kal";
+   document.getElementById("price").innerHTML = "29.00 SR";
+   document.getElementById("dt").innerHTML = "١٦٠ جرام بلاك انجوس - صوص الترفل - جبنة سويسرية - فطر - بصل كرنشي";
+  
+   break;
+  
+  /*hot*/
+
+   case "laa":
+
+   document.getElementById("myImage").src = "images/drip/kls.jpg" ;
+   document.getElementById("title").innerHTML = " كلاسيك تشكن";
+   document.getElementById("kal").innerHTML = "420 kal";
+   document.getElementById("price").innerHTML = "21.00 SR";
+   document.getElementById("dt").innerHTML = "صدر دجاج مقلي - خس - جبنة امريكية - صوص الخردل بالعسل - مخلل";
+  
+   break;
+   
+
+   case "spp":
+
+   document.getElementById("myImage").src = "images/drip/mib.jpg"  ;
+   document.getElementById("title").innerHTML = "ميبل تشكن";
+   document.getElementById("kal").innerHTML = "440 kal";
+   document.getElementById("price").innerHTML = "24.00 SR";
+   document.getElementById("dt").innerHTML = "صدر دجاج مقلي - سلطة ملفوف - جبنة امريكية - صوص ميبل  ";
+  
+   break;
+  
+   case "dd1":
+
+   document.getElementById("myImage").src = "images/drip/ch.jpg"  ;
+   document.getElementById("title").innerHTML = "تشيبوتلي تشكن";
+   document.getElementById("kal").innerHTML = "440 kal";
+   document.getElementById("price").innerHTML = "24.00 SR";
+   document.getElementById("dt").innerHTML = "صدر دجاج مقلي - خس- جبنة امريكية - صوص تشيبوتلي - هالبينو ";
+  
+   break;
+  
+
+     case "dd2":
+
+   document.getElementById("myImage").src = "images/drip/brsh.jpg"  ;
+   document.getElementById("title").innerHTML = "بريوش تشكن";
+   document.getElementById("kal").innerHTML = "630 kal";
+   document.getElementById("price").innerHTML = "27.00 SR";
+   document.getElementById("dt").innerHTML = "صدر دجاج مقلي - سلطة ملفوف - جبنة امريكية - جيا صوص - قطع مخلل  ";
+  
+   break;
+  
+   case "dd3":
+
+   document.getElementById("myImage").src = "images/drip/brsh.jpg"  ;
+   document.getElementById("title").innerHTML = "بريوش بيف";
+   document.getElementById("kal").innerHTML = "680 kal";
+   document.getElementById("price").innerHTML = "27.00 SR";
+   document.getElementById("dt").innerHTML = "١٦٠ جرام لحم بلاك انجوس- سلطة ملفوف - جبنة امريكية - جيا صوص - قطع مخلل ";
+  
+   break;
+
+   case "dd4":
+
+   document.getElementById("myImage").src = "images/drip/min.jpg"  ;
+   document.getElementById("title").innerHTML = "ميني برجر كرسبي";
+   document.getElementById("kal").innerHTML = "400 kal";
+   document.getElementById("price").innerHTML = "22.00 SR";
+   document.getElementById("dt").innerHTML = "عدد ٢ ميني برجر - صدر دجاج مقلي - خس - جبنة امريكية - صوص جيا";
+  
+   break;
+
+
+   case "dd5":
+
+   document.getElementById("myImage").src = "images/drip/minb.jpg"  ;
+   document.getElementById("title").innerHTML = "ميني برجر بيف";
+   document.getElementById("kal").innerHTML = "430 kal";
+   document.getElementById("price").innerHTML = "22.00 SR";
+   document.getElementById("dt").innerHTML = "عدد ٢ ميني برجر - ٧٠ جرام بلاك انجوس - خس - جبنة امريكية - صوص جيا";
+  
+   break;
+
+
+   
+
+   case "fll":
+
+   document.getElementById("myImage").src = "images/hot/ch.jpg";
+   document.getElementById("title").innerHTML = "تشكن فرايز";
+   document.getElementById("kal").innerHTML = "510 kal";
+   document.getElementById("price").innerHTML = "21.00 SR";
+   document.getElementById("dt").innerHTML = "قطع دجاج مقلي - بطاطس - صوص جيا - صوص رنش - بصل مقلي ";
+   break;
+
+
+   case "ess":
+
+   document.getElementById("myImage").src = "images/hot/bic.jpg";
+   document.getElementById("title").innerHTML = "بيكون فرايز";
+   document.getElementById("kal").innerHTML = "470 kal";
+   document.getElementById("price").innerHTML = "23.00 SR";
+   document.getElementById("dt").innerHTML = "قطع لحم مقدد - بطاطس - صوص مدخن - بصل مقلي - جبن شيدر";
+
+   break;
+
+
+   case "trfzz":
+
+   document.getElementById("myImage").src = "images/hot/mib.jpg";
+   document.getElementById("title").innerHTML = "ميبل شرمب";
+   document.getElementById("kal").innerHTML = "370 kal";
+   document.getElementById("price").innerHTML = "27.00 SR";
+   document.getElementById("dt").innerHTML = "٦ قطع روبيان مقلي - صوص ميبل - حبه سوداء - بصل اخضر ";
+   break;
+       
+   case "amm":
+
+   document.getElementById("myImage").src = "images/hot/str.jpg";
+   document.getElementById("title").innerHTML = "سيترون شرمب";
+   document.getElementById("kal").innerHTML = "350 kal";
+   document.getElementById("price").innerHTML = "27.00 SR";
+   document.getElementById("dt").innerHTML = "٦ قطع روبيان مقلي - صوص الاعشاب بالليمون - حبه سوداء";
+   break;
+
+
+   
+/*cold*/
+
+
+   case "cproo":
+
+   document.getElementById("myImage").src = "images/cold/15.jpg";
+   document.getElementById("title").innerHTML = "كولا";
+   document.getElementById("price2").innerHTML = "3.00 SR";
+   break;
+
+   case "cprr":
+
+   document.getElementById("myImage").src = "images/cold/dit.jpg";
+   document.getElementById("title").innerHTML = "Cola Diet | كولا دايت";
+   document.getElementById("kal").innerHTML = "0 kal";
+   document.getElementById("price").innerHTML = "5.00 SR";
+   break;
+
+   case "csvv":
+
+   document.getElementById("myImage").src = "images/cold/16.jpg";
+   document.getElementById("title").innerHTML = " سبرايت";
+
+   document.getElementById("price2").innerHTML = "3.00 SR";
+   break;
+
+   case "cree":
+
+   document.getElementById("myImage").src = "images/cold/wht.jpg";
+   document.getElementById("title").innerHTML = "ماء";
+   document.getElementById("price2").innerHTML = "3.00 SR";
+   break;
+
+
+
+
+
+   }
+
+
+
+</script>
+
+
+
+<script>
+function goBack() {
+  window.history.back();
+}
+</script>
+
+
+</body>
+</html>
+
