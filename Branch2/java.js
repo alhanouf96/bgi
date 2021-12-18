@@ -100,7 +100,11 @@ localStorage.setItem("storageName",val);
 window.location.href = "deet.html";
 break;
 
-
+case "d6":
+var val = "dd6"
+localStorage.setItem("storageName",val);
+window.location.href = "deet.html";
+break;
 
 
 
