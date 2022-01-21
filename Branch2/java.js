@@ -28,18 +28,12 @@ document.addEventListener("DOMContentLoaded", function(){
 function gofor(id) {
 
 switch(id){
-
   case "kin":
 var val = "ki"
 localStorage.setItem("storageName",val);
 window.location.href = "deet.html";
  break;
 
-case "vi":
-var val = "vii"
-localStorage.setItem("storageName",val);
-window.location.href = "deet.html";
- break;
 
 case "vi":
 var val = "vii"
@@ -49,6 +43,25 @@ window.location.href = "deet.html";
 
 case "km":
 var val = "kmm"
+localStorage.setItem("storageName",val);
+window.location.href = "deet.html";
+ break;
+
+  case "kin2":
+var val = "ki2"
+localStorage.setItem("storageName",val);
+window.location.href = "deet.html";
+ break;
+
+
+case "vi2":
+var val = "vii2"
+localStorage.setItem("storageName",val);
+window.location.href = "deet.html";
+ break;
+
+case "km2":
+var val = "kmm2"
 localStorage.setItem("storageName",val);
 window.location.href = "deet.html";
  break;
